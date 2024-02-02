@@ -2,6 +2,17 @@
 
     -create React App
     -configure tailwind
+    -create components
+    -create Login Page
+    -form validation
+    -sign up page
+    -firebase setup
+    -redux store
+    -sign out functionality
+    -Update profile
+    
+    
+
 
 # Features
 
