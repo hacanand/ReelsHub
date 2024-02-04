@@ -1,4 +1,4 @@
-# Netflix GPT
+# ReelsHub
 
     -create React App
     -configure tailwind
@@ -21,11 +21,10 @@
     -planing for main and secondary container
     -update the store with trailer video
     -embedded the trailer video
-    
-    
-
+    -build secondary container
 
 # Features
+
     -signIn and sign Up form
     -Browse
     -Header
@@ -35,8 +34,7 @@
           -movieSuggestions
           -movieList
 
-# NetflixGpt
+# ReelsGpt
 
     -SearchBar
     -movie suggestions
-
