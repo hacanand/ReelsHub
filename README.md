@@ -21,11 +21,12 @@
     -planing for main and secondary container
     -update the store with trailer video
     -embedded the trailer video
-    
-    
-
+    -build secondary container
+    -add movie suggestions
+    -componentize the movie list and movie suggestions
 
 # Features
+
     -signIn and sign Up form
     -Browse
     -Header
@@ -39,4 +40,3 @@
 
     -SearchBar
     -movie suggestions
-
