@@ -7,14 +7,14 @@ import {
     updateProfile,
 } from 'firebase/auth'
 import { auth } from '../utils/firebase_config'
-import { useNavigate } from 'react-router-dom'
+ 
 import { useDispatch } from 'react-redux'
 import { addUser } from '../utils/userSlice'
 import { BG_Img, LOGO } from '../utils/constants'
 
 function Login() {
     const dispatch = useDispatch()
-    const navigate = useNavigate()
+   
     const [isSignInForm, setSignInForm] = useState(true)
     const email = useRef(null)
     const password = useRef(null)
