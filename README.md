@@ -1,4 +1,4 @@
-# Netflix GPT
+# ReelsHub
 
     -create React App
     -configure tailwind
@@ -35,7 +35,7 @@
           -movieSuggestions
           -movieList
 
-# NetflixGpt
+# ReelsGpt
 
     -SearchBar
     -movie suggestions
