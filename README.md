@@ -23,7 +23,7 @@
     -embedded the trailer video
     -build secondary container
     -add movie suggestions
-    -componentize the movie list
+    -componentize the movie list and movie suggestions
 
 # Features
 
