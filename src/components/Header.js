@@ -33,7 +33,7 @@ function Header() {
                 navigate("/browse")
             } else {
                 dispatch(removeUser())
-              navigate('/login')
+              navigate('/')
              
             }
        })
