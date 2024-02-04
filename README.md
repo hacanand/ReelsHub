@@ -22,6 +22,8 @@
     -update the store with trailer video
     -embedded the trailer video
     -build secondary container
+    -add movie suggestions
+    -componentize the movie list
 
 # Features
 
