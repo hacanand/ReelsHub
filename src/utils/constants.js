@@ -9,3 +9,4 @@ export const API_OPTIONS = {
       Authorization: process.env.REACT_APP_TOKEN,
    },
 }
+export const IMG_CDN_URL = process.env.REACT_APP_IMG_CDN_URL;

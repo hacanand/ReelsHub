@@ -41,15 +41,15 @@ function Header() {
       return () => unsubscribe();
     }, [])
     return (
-       <div className="absolute top-3 flex z-10 justify-between   w-full bg-gradient-to-b from-black to-transparent px-20 py-0">
-          <img className="w-52" src={Logo} alt="" />
+       <div className="absolute top-0 flex z-10 justify-between w-full bg-gradient-to-b from-black to-transparent px-20 py-0">
+          <img className="w-52 mt-3" src={Logo} alt="" />
 
           {user && (
              <div className="">
                 
                 <button
                    onClick={handleSignOut}
-                   className="font-bold text-white mt-3 ml-4 border-2 border-orange-500 px-2 py-2 rounded-md hover:bg-orange-500 hover:text-black transition duration-300 ease-in-out"
+                   className="font-bold text-white mt-5 ml-4 border-2 border-orange-500 px-2 py-2 rounded-md hover:bg-orange-500 hover:text-black transition duration-300 ease-in-out"
                 >
                    Sign out
                 </button>
