@@ -24,6 +24,11 @@
     -build secondary container
     -add movie suggestions
     -componentize the movie list and movie suggestions
+    -built movie list
+    -ui improvement
+    -add movie list to secondary container
+    
+
 
 # Features
 

@@ -4,7 +4,7 @@ import ReactShimmer from '../utils/ReactShimmer'
 const MovieList = ({ title, Movies }) => {
    return (
       <div className="p-6  ">
-         <h1 className="text-3xl text-ellipsis text-amber-400 font-bold py-3">
+         <h1 className="text-3xl text-ellipsis text-amber-500 font-bold py-3">
             {title}
          </h1>
          <div className="flex  overflow-x-scroll no-scrollbar">
