@@ -27,6 +27,11 @@
     -built movie list
     -ui improvement
     -add movie list to secondary container
+    -build movie card
+    -multi-language support
+    -add search bar
+    -add search bar
+    
     
 
 
