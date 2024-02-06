@@ -1,7 +1,7 @@
 import React from 'react'
 import MovieCard from './MovieCard'
 import ReactShimmer from '../utils/ReactShimmer'
-const MovieList = ({ title, Movies }) => {
+const MovieList = ({ title, movies }) => {
    return (
       <div className="p-6  ">
          <h1 className="text-3xl text-ellipsis text-amber-500 font-bold py-3">
@@ -9,10 +9,10 @@ const MovieList = ({ title, Movies }) => {
          </h1>
          <div className="flex  overflow-x-scroll no-scrollbar">
             <div className="flex gap-4">
-               {!Movies ? (
+               {!movies ? (
                   <ReactShimmer />
                ) : (
-                  Movies.map((movie) => (
+                  movies.map((movie) => (
                      <MovieCard
                         key={movie.title}
                         posterPath={movie?.poster_path}

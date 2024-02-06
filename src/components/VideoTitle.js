@@ -7,7 +7,7 @@ function VideoTitle({ title, overview }) {
       <div className=" absolute w-screen  aspect-video  pt-[20%] px-12  text-white bg-gradient-to-r from-black">
          <div className=" h-[50px] max-h-[70px] w-[600px] min-w-[100px]">
             <h1 className="text-6xl font-bold ">{title}</h1>
-            <p className="py-6 text-lg w-full">{overview}</p>
+            <p className="py-6 text-lg w-full max-h-[150px] ">{overview}</p>
             <div>
                <button className="font-bold text-white mt-6 ml-4  bg-orange-500 border-2 border-orange-500 px-2 py-2 rounded-md hover:bg-orange-500 hover:text-black transition duration-300 ease-in-out">
                   <div className=" flex flex-row ml-2">

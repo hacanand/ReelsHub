@@ -10,13 +10,13 @@ const SecondaryContainer = () => {
          <div className="-mt-36 relative ">
             <MovieList
                title={'Now Playing'}
-               Movies={movies?.nowPlayingMovies}
+               movies={movies?.nowPlayingMovies}
             />
-            <MovieList title={'Trending'} Movies={movies?.nowPlayingMovies} />
-            <MovieList title={'Horror'} Movies={movies?.nowPlayingMovies} />
-            <MovieList title={'Popular'} Movies={movies?.popularMovies} />
-            <MovieList title={'Upcoming '} Movies={movies?.nowPlayingMovies} />
-            <MovieList title={'Thriller'} Movies={movies?.nowPlayingMovies} />
+            <MovieList title={'Trending'} movies={movies?.nowPlayingMovies} />
+            <MovieList title={'Horror'} movies={movies?.nowPlayingMovies} />
+            <MovieList title={'Popular'} movies={movies?.popularMovies} />
+            <MovieList title={'Upcoming '} movies={movies?.nowPlayingMovies} />
+            <MovieList title={'Thriller'} movies={movies?.nowPlayingMovies} />
          </div>
       </div>
    )

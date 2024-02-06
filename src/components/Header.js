@@ -6,7 +6,7 @@ import { auth } from '../utils/firebase_config'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { addUser, removeUser } from '../utils/userSlice'
-import { FaHome, FaSearch } from 'react-icons/fa'
+import { FaHome, FaSearch, FaSignOutAlt } from 'react-icons/fa'
 import { toggleGptSearchView } from '../utils/gptSlice'
 import { SUPPORTED_LANGUAGES } from '../utils/constants'
 import { changeLang } from '../utils/configSlice'
@@ -52,7 +52,9 @@ function Header() {
    }
    return (
       <div className="absolute top-0 flex z-10 justify-between w-full bg-gradient-to-b from-black to-transparent px-20 py-0">
-         <img className="w-52 mt-3" src={Logo} alt="" />
+         <div>
+           <img className="w-52 mt-3" src={Logo} alt="" />  
+         </div>
 
          {user && (
             <div className="flex p-2">
@@ -60,7 +62,7 @@ function Header() {
                   <select
                      name=""
                      id=""
-                     className="m-4 mx-10 bg-orange-100 bg-opacity-80 focus:outline-none rounded-sm"
+                     className="m-4 mx-8 bg-orange-100 bg-opacity-80 focus:outline-none rounded-sm cursor-pointer"
                      onChange={handleLanguageChange}
                   >
                      {SUPPORTED_LANGUAGES.map((lang) => (
@@ -70,26 +72,27 @@ function Header() {
                      ))}
                   </select>
                )}
-               <div className="mt-4 font-bold text-gray-300 hover:text-orange-600 transition duration-300 ease-in-out cursor-pointer">
+               <div className="mt-4 font-bold text-gray-300 hover:text-green-600 transition duration-300 ease-in-out cursor-pointer">
                   {showGptSearch ? (
                      <FaHome
-                        className="size-7 -mx-6 hover:size-7 absolute"
+                        className="size-7 -mx-4 hover:size-7 absolute"
                         onClick={handleGptSearchClick}
                      />
                   ) : (
                      <FaSearch
-                        className="size-7 -mx-6 hover:size-7 absolute"
+                        className="size-7 -mx-4 hover:size-7 "
                         onClick={handleGptSearchClick}
                      />
                   )}
                </div>
-
+                     <div>
                <button
                   onClick={handleSignOut}
-                  className="font-bold text-white mt-4 ml-4 border-2 border-orange-500 px-1 p-2 rounded-md hover:bg-orange-500 hover:text-black transition duration-300 ease-in-out"
+                  className="font-bold text-white mt-2 ml-4  p-2 rounded-md  hover:text-red-700 hover:text-[sdfa] transition duration-300 ease-in-out"
                >
-                  Sign out
-               </button>
+                  <FaSignOutAlt className="size-7 mt-" />
+                  </button>
+                  </div>
             </div>
          )}
       </div>

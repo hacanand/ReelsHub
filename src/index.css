@@ -3,7 +3,6 @@
 @tailwind utilities;
  
 
- 
 .cut-text {
   display: block;  
   display: -webkit-box;
@@ -16,4 +15,3 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
- 

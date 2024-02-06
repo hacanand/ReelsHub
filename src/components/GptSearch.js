@@ -6,9 +6,9 @@ import { BG_Img } from '../utils/constants'
 const GptSearch = () => {
    return (
       <div>
-         <div className="absolute w-full h-full  -z-10 ">
+         <div className="fixed w-screen h-[1000px] -z-10">
             <img
-               className=" object-cover crop min-h-full min-w-full -z-1 "
+               className="object-fill w-[1920px] h-[1000px"
                src={BG_Img}
                alt="bg_img"
             />
