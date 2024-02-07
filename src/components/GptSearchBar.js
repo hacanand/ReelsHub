@@ -4,13 +4,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import openAi from '../utils/openAi'
 import { API_OPTIONS } from '../utils/constants'
 import { addGptMovieResult } from '../utils/gptSlice'
+ 
 
 const GptSearchBar = () => {
    // @ts-ignore
    const langKey = useSelector((store) => store.config.lang)
+   // @ts-ignore
+ 
    const searchText = useRef(null)
    const dispatch = useDispatch()
-    
 
    const searchMovieTmdb = async (movie) => {
       const data = await fetch(
@@ -20,6 +22,7 @@ const GptSearchBar = () => {
          API_OPTIONS
       )
       const jsonData = await data.json()
+  
       return jsonData.results
    }
 
@@ -36,7 +39,7 @@ const GptSearchBar = () => {
       if (!gptResults.choices) {
          console.log('No results found')
       }
-  
+
       const gptMovies = gptResults.choices?.[0]?.message?.content?.split(',')
       //api call to tmdb for movie details
       const data = gptMovies.map((movie) => searchMovieTmdb(movie))

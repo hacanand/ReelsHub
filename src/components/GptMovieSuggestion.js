@@ -6,8 +6,9 @@ const GptMovieSuggestion = () => {
    // @ts-ignore
    const { movieResults, movieNames } = useSelector((store) => store.gpt)
    if (!movieNames) {
-     return null;
+      return null
    }
+
    return (
       <div className=" p-4 m-4 bg-slate-900 h-fit bg-opacity-80 rounded-3xl text-white">
          <div>

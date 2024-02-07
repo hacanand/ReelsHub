@@ -11,7 +11,7 @@ function VideoTitle({ title, overview }) {
                {overview}
             </p>
             <div >
-               <button className="font-bold text-white mt-12 -ml-5 md:ml-4  md:bg-orange-500 md:border-2  md:border-orange-500 md:px-2 md:py-2 rounded-md md:hover:bg-orange-500 hover:text-black transition duration-300 ease-in-out">
+               <button className="font-bold text-white mt-12 -ml-5 md:ml-2  md:bg-orange-500 md:border-2  md:border-orange-500 md:px-2 md:py-2 rounded-md md:hover:bg-orange-500 hover:text-black transition duration-300 ease-in-out">
                   <div className=" flex flex-row ml-2">
                      <FaCirclePlay className=" size-12 md:size-10" />
                      <h1 className=" hidden md:inline-block font-bold mt-1.5 ml-1">play</h1>
