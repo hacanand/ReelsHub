@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import MovieList from './MovieList'
-import ReactShimmer from '../utils/ReactShimmer'
 
 const GptMovieSuggestion = () => {
    // @ts-ignore

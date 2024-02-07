@@ -4,7 +4,7 @@ import { IoIosInformationCircleOutline } from 'react-icons/io'
 
 function VideoTitle({ title, overview }) {
    return (
-      <div className=" absolute w-screen mt-14 md:mt-0 aspect-video md:pt-[20%] px-6 md:px-12 text-white bg-gradient-to-r from-black">
+      <div className=" absolute w-screen mt-14 md:mt-0 aspect-video md:pt-[20%] px-6 md:px-12 text-white md:bg-gradient-to-r from-black">
          <div className=" md:h-[50px] md:max-h-[70px] md:w-[600px] md:min-w-[100px]">
             <h1 className="text-xl md:mt-0 mt-16 md:ml-0 -ml-4 md: md:text-6xl font-bold ">{title}</h1>
             <p className=" hidden md:inline-block py-6 text-lg w-full max-h-[150px] ">

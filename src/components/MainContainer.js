@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { useSelector } from 'react-redux'
 import VideoTitle from './VideoTitle'
 import VideoBackground from './VideoBackground'
+import { YtLoader } from '../utils/ReactShimmer'
 
 function MainContainer() {
    // @ts-ignore

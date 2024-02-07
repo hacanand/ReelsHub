@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { lang } from '../utils/languageConst'
 import { useDispatch, useSelector } from 'react-redux'
 import openAi from '../utils/openAi'
@@ -10,6 +10,7 @@ const GptSearchBar = () => {
    const langKey = useSelector((store) => store.config.lang)
    const searchText = useRef(null)
    const dispatch = useDispatch()
+    
 
    const searchMovieTmdb = async (movie) => {
       const data = await fetch(
@@ -35,7 +36,7 @@ const GptSearchBar = () => {
       if (!gptResults.choices) {
          console.log('No results found')
       }
-      console.log(gptResults.choices[0])
+  
       const gptMovies = gptResults.choices?.[0]?.message?.content?.split(',')
       //api call to tmdb for movie details
       const data = gptMovies.map((movie) => searchMovieTmdb(movie))
