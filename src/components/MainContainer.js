@@ -12,7 +12,7 @@ function MainContainer() {
 
    const { original_title, overview, id } = randomMovie
    return (
-      <div className="">
+      <div className="md:pt-0 pt-[20%] md:w-full bg-black">
          <VideoTitle title={original_title} overview={overview} />
          <VideoBackground movieId={id} />
       </div>

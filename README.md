@@ -31,6 +31,13 @@
     -multi-language support
     -add search bar
     -add search bar
+    -gpt search for movie suggestions
+    -fetch movie suggestions from tmdb
+    -created gptSlice added to store
+    -reuse the movie list component
+    -memoization
+    -optimize for device
+    
     
     
 

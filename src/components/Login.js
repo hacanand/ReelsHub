@@ -73,7 +73,7 @@ function Login() {
          <Header />
          <div className="absolute w-full h-[1125px] z-0 select-none ">
             <img
-               className=" object-cover crop min-h-full min-w-full -z-1 "
+               className=" object-cover min-h-full min-w-full -z-1 "
                src={BG_Img}
                alt="bg_img"
             />
@@ -81,7 +81,7 @@ function Login() {
          <div className="bg-black bg-opacity-50 absolute w-full h-[1125px] z-0">
             <form
                onSubmit={(e) => e.preventDefault()}
-               className=" select-none absolute right-8 left-8 mx-auto my-32 h-fit w-96 rounded-lg bg-black p-10  text-slate-200 bg-opacity-70 min-w-8 "
+               className=" select-none absolute md:right-8 md:left-8 mx-auto my-32 h-fit md:w-96 rounded-lg bg-black p-10  text-slate-200 bg-opacity-70 min-w-8 "
             >
                <h1 className="py-4 text-3xl font-bold ">
                   {isSignInForm ? 'Sign In' : 'Sign Up'}
@@ -109,7 +109,7 @@ function Login() {
                <p className=" text-red-400 font-bold ">{errorMsg}</p>
 
                <button
-                  className=" bg my-4 text-2xl font-bold w-full bg-red-700 p-4 rounded-lg"
+                  className=" my-4 text-2xl font-bold w-full bg-red-700 p-4 rounded-lg"
                   onClick={handleButtonClick}
                >
                   {isSignInForm ? 'Sign In' : 'Sign Up'}

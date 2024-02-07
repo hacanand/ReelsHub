@@ -35,6 +35,7 @@ const GptSearchBar = () => {
       if (!gptResults.choices) {
          console.log('No results found')
       }
+      console.log(gptResults.choices[0])
       const gptMovies = gptResults.choices?.[0]?.message?.content?.split(',')
       //api call to tmdb for movie details
       const data = gptMovies.map((movie) => searchMovieTmdb(movie))
@@ -49,19 +50,19 @@ const GptSearchBar = () => {
    }
 
    return (
-      <div className="pt-[10%] flex justify-center">
+      <div className="md:pt-[10%] pt-[30%] flex justify-center">
          <form
-            className="w-1/2 bg-opacity-50 bg-black grid grid-cols-12 rounded-md"
+            className="md:w-1/2 w-full bg-opacity-50 bg-black md:grid md:grid-cols-12 rounded-md"
             onSubmit={(e) => e.preventDefault()}
          >
             <input
                type="text"
                ref={searchText}
-               className=" bg-opacity-50 p-4 m-4  col-span-10 rounded-lg focus:outline-none "
+               className=" bg-opacity-50 p-4 md:m-4 grid  md:col-span-9 rounded-lg focus:outline-none w-full "
                placeholder={lang[langKey].gptPlaceholder}
             />
             <button
-               className="bg-orange-500 hover:bg-orange-700 hover:scale-95 text-white font-bold m-4 py-2 px-4 rounded-md col-span-2"
+               className="bg-orange-500 hover:bg-orange-700 hover:scale-95 text-white font-bold text-center md:m-4 md:mx-6 p-4 rounded-md md:col-span-3 mx-32 mt-3"
                onClick={handleGptSearchClick}
             >
                {lang[langKey].Search}

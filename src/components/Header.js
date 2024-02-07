@@ -51,18 +51,18 @@ function Header() {
       dispatch(changeLang(e.target.value))
    }
    return (
-      <div className="absolute top-0 flex z-10 justify-between w-full bg-gradient-to-b from-black to-transparent px-20 py-0">
+      <div className=" fixed top-0  z-10  md:w-full bg-gradient-to-b from-black to-transparent px-20 py-0 bg-black  sm:bg-blue-950 md:bg-green-950 flex flex-col justify-center md:flex-row md:justify-between md:h-16   rounded">
          <div>
-           <img className="w-52 mt-3" src={Logo} alt="" />  
+            <img className="md:w-52 md:mx-0" src={Logo} alt="" />
          </div>
 
          {user && (
-            <div className="flex p-2">
+            <div className="flex md:p-2 justify-center md:justify-center">
                {showGptSearch && (
                   <select
                      name=""
                      id=""
-                     className="m-4 mx-8 bg-orange-100 bg-opacity-80 focus:outline-none rounded-sm cursor-pointer"
+                     className=" mt-4 mx-8 bg-gray-400 bg-opacity-80 focus:outline-none rounded-sm cursor-pointer"
                      onChange={handleLanguageChange}
                   >
                      {SUPPORTED_LANGUAGES.map((lang) => (
@@ -85,14 +85,14 @@ function Header() {
                      />
                   )}
                </div>
-                     <div>
-               <button
-                  onClick={handleSignOut}
-                  className="font-bold text-white mt-2 ml-4  p-2 rounded-md  hover:text-red-700 hover:text-[sdfa] transition duration-300 ease-in-out"
-               >
-                  <FaSignOutAlt className="size-7 mt-" />
+               <div>
+                  <button
+                     onClick={handleSignOut}
+                     className="font-bold text-white mt-2 ml-4  p-2 rounded-md  hover:text-red-700 hover:text-[sdfa] transition duration-300 ease-in-out"
+                  >
+                     <FaSignOutAlt className="size-7 mt-" />
                   </button>
-                  </div>
+               </div>
             </div>
          )}
       </div>
